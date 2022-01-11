@@ -3,15 +3,18 @@ class Products {
     let htmlCatalod = "";
     CATALOG.forEach(({ id, name, price, img }) => {
       htmlCatalod += `
-        <li>
-          <span>${name}</span>
-          <img src="${img}"/>
-          <span>${name}</span>
-          <button>Добавить в корзину</button>
+        <li сlass="products-element" id="products-element">
+          <span сlass="products-element__name"  id="products-element__name">${name}</span>
+          <img src="${img}" сlass="products-element__img"  id="products-element__img"/>
+          <span сlass="products-element__price"  id="products-element__price">
+            ⚡ ${price.toLocaleString()} USD
+          </span>
+          <button сlass="products-element__btn"  id="products-element__btn">Добавить в корзину</button>
         </li>`;
     });
+
     const html = `
-    <ul>
+    <ul сlass="products-container1"  id="products-container">
       ${htmlCatalod}
     </ul>`;
 
