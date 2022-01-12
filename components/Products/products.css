@@ -41,6 +41,6 @@
 }
 #products-element__btn_active {
   margin-top: var(--spacing-medium);
-  bottom: 1px solid var(--color-unaccent) transparent;
+  bottom: 1px solid transparent;
   background-image: var(--linear-gradient);
 }
