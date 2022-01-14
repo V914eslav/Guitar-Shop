@@ -1,7 +1,8 @@
 :root {
   --color-light: #f8f9fa;
-  --color-product-item: #fff;
+  --color-product-item-bg: #fff;
   --color-unaccent: #808080;
+  --color-medium: #e8e8e8;
 
   --spacing-small: 10px;
   --spacing-medium: 15px;
