@@ -5,6 +5,8 @@ function render() {
   productsPage.render();
 }
 
+spinnerPage.render();
+
 let CATALOG = [];
 
 // https://api.myjson.com/bins/esicc
@@ -13,6 +15,11 @@ fetch("server/catalog.json")
   .then((res) => res.json())
   .then((body) => {
     CATALOG = body;
+    // setTimeout(function () {
+    //   spinnerPage.handleClear();
+    //   render();
+    // }, 1000);
+    spinnerPage.handleClear();
     render();
   })
   .catch((error) => {
